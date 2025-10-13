@@ -1,0 +1,89 @@
+name: Bug Report
+description: Report an issue with a subdomain project at kmaurinjones.dev
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this issue! Please fill out the information below.
+
+  - type: input
+    id: url
+    attributes:
+      label: Subdomain/Project URL
+      description: Which subdomain or project is experiencing issues?
+      placeholder: https://example.kmaurinjones.dev
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A clear description of what's broken or not working
+      placeholder: Tell us what you see
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What should happen?
+      placeholder: Describe the expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happens?
+      placeholder: Describe what actually happens
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce this issue?
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Scroll down to '...'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Please upload screenshots of both the frontend UI and browser dev console (F12) showing any errors
+      placeholder: Drag and drop screenshots here
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser
+      placeholder: e.g., Chrome 120, Firefox 121, Safari 17
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: Operating System
+      placeholder: e.g., Windows 11, macOS 14, Ubuntu 22.04
+    validations:
+      required: true
+
+  - type: input
+    id: datetime
+    attributes:
+      label: Date/Time of Issue
+      placeholder: e.g., 2025-10-13 14:30 EDT
+    validations:
+      required: false
