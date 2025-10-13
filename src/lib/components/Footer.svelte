@@ -1,3 +1,10 @@
+<script lang="ts">
+  import { getAbsoluteUrl } from '$lib/utils/url';
+  import { page } from '$app/stores';
+
+  const version = $derived($page.data.siteConfig?.version || '0.0.1');
+</script>
+
 <footer class="border-t border-taupe/20 bg-base">
   <div class="max-w-6xl mx-auto px-6 py-8">
     <div class="flex flex-col gap-6">
@@ -10,7 +17,7 @@
       <!-- Footer links -->
       <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
         <div class="text-taupe text-sm">
-          <span class="text-taupe/60">v0.0.1</span>
+          <span class="text-taupe/60">v{version}</span>
         </div>
         <div class="flex gap-6 text-taupe">
           <a href="https://linkedin.com/in/kmaurinjones" class="hover:text-terracotta transition-colors">
@@ -19,7 +26,7 @@
           <a href="https://medium.com/@kmaurinjones" class="hover:text-terracotta transition-colors">
             Medium
           </a>
-          <a href="https://kmaurinjones.dev/contact" class="hover:text-terracotta transition-colors">
+          <a href="/contact" class="hover:text-terracotta transition-colors">
             Contact
           </a>
         </div>

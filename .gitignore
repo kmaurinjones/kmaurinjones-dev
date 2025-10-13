@@ -1,3 +1,9 @@
+# Miscellaneous files
+.claude/
+ignore/*
+*CLAUDE.md*
+*CHANGELOG.md
+
 # Image editing for image assets
 *image-editing/
 
