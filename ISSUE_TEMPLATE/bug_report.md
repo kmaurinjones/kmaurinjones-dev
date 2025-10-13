@@ -28,7 +28,7 @@ assignees: ''
 3.
 
 ## Additional Context
-<!-- Screenshots, error messages, or any other relevant information -->
+<!-- Please upload screenshots of both the frontend UI and browser dev console (F12) showing any errors -->
 
 
 ## Environment

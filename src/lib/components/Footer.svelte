@@ -10,8 +10,8 @@
 
       <!-- Footer links -->
       <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
-        <div class="text-taupe">
-          kmaurinjones.dev
+        <div class="text-taupe text-sm">
+          kmaurinjones.dev <span class="text-taupe/60">v0.0.1</span>
         </div>
         <div class="flex gap-6 text-taupe">
           <a href="https://linkedin.com/in/kmaurinjones" class="hover:text-terracotta transition-colors">
