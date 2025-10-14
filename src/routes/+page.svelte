@@ -8,30 +8,30 @@
   onMount(() => mounted = true);
 
   const currentWork = [
-    "Architecting cloud-native GenAI healthcare applications using PyTorch, HuggingFace, and custom ML pipelines",
-    "Leading development of healthcare-focused GenAI tools for clinical decision-making and patient outcomes",
-    "Implementing scalable AI architectures for processing and analyzing healthcare data"
+    "Building AI solutions for healthcare that address real business challenges while navigating regulatory constraints",
+    "Leading end-to-end development with state of the art closed source and open-source GenAI technologies—from stakeholder alignment to production deployment",
+    "Developing internal tools and educating teams on how AI can accelerate existing workflows across technical and non-technical functions"
   ];
 
   const projects = [
     {
       title: "Housing Law Insights",
-      description: "Architected an end-to-end Generative AI solution using fine-tuned LLaMa model to extract structured data from 50,000 legal cases. Used XGBoost model (achieving 0.9 F1 score on case outcome prediction) for historical case analysis. Deployed interactive dashboard to explore legal data patterns."
+      description: "Made legal precedent searchable by pulling structured data from 50,000 housing cases and building a classifier to predict outcomes. Years of case law became navigable once the data was structured properly."
     },
     {
       title: "Ontario Building Code RAG",
-      description: "Focused on meaningful user impact and elegant backend optimizations, this project was completed to help a friend navigate the 800k token Ontario Building Code more easily for house improvements. This app enables Natural Language 'searching' of the document's contents in a user-friendly manner. Inference optimizations implemented to decrease inference time, and cost, while maintaining search and response quality."
+      description: "A friend was spending 30 minutes manually searching building code documents for each renovation question. Built a RAG system to make it conversational—turned out query expansion handled it well without adding complexity."
     },
     {
       title: "Hack the Threat 2023 Winner",
-      description: "Winner of Audience Choice award. Developed a privacy-preserving data anonymization application implementing k-anonymity algorithm. Created user-friendly interface allowing non-technical users to configure anonymization settings without coding knowledge."
+      description: "Built a data anonymization tool implementing k-anonymity. Won Audience Choice. The design focused on making privacy configuration accessible to non-technical users without requiring code."
     }
   ];
 </script>
 
 <svelte:head>
-  <title>Kai Maurin-Jones | Applied AI Developer</title>
-  <meta name="description" content="Multilingual Data Scientist specializing in regulated industries, building robust AI architectures to solve complex business challenges." />
+  <title>Kai Maurin-Jones | Forever Builder</title>
+  <meta name="description" content="Building things to see if they'll work. Data Scientist working in healthcare AI." />
 </svelte:head>
 
 <div class="min-h-screen {mounted ? 'opacity-100' : 'opacity-0'} transition-opacity duration-700">
@@ -41,10 +41,10 @@
     <div class="space-y-8">
       <div>
         <h1 class="text-4xl lg:text-5xl font-bold text-primary mb-6 leading-tight">
-          Hello, I'm Kai.
+          Hi! I'm Kai.
         </h1>
         <p class="text-xl lg:text-2xl text-taupe leading-relaxed">
-          I build pragmatic AI systems for regulated spaces—shipping fast without breaking rules.
+          I build things and see if they'll work.
         </p>
       </div>
     </div>
@@ -65,7 +65,7 @@
   <section class="mb-16">
     <blockquote class="border-l-4 border-terracotta pl-6 lg:pl-8 py-4 bg-caramel/5">
       <p class="text-lg lg:text-xl leading-relaxed text-primary font-medium">
-        Multilingual Data Scientist specializing in regulated industries, building robust AI architectures to solve complex business challenges. Experienced in implementing end-to-end Conversational AI solutions with a focus on production-ready systems that deliver specific and measurable outcomes.
+        I didn't start in computer science. I started with audio engineering and languages. During undergrad, I found myself analyzing a thousand transcripts of multilingual data and realized this was the work I wanted to do.
       </p>
     </blockquote>
   </section>
@@ -73,8 +73,13 @@
   <!-- Additional Description -->
   <section class="mb-16">
     <p class="text-lg leading-relaxed text-taupe max-w-4xl">
-      I thrive at the intersection of cutting-edge AI and practical deployment constraints, building tools that teams actually want to use.
-      Skilled in translating technical Data Science and ML concepts for internal and external stakeholders and executives, creating impactful AI in ever-changing environments.
+      That research project turned into data science, then computational linguistics, then machine learning, and now generative AI. I didn't know what to call it at the time—just knew I wanted more of whatever it was. The path from audio production to AI wasn't linear, but looking back, it makes sense. Both are about patterns, both require you to hear what's actually there versus what you expect.
+    </p>
+    <p class="text-lg leading-relaxed text-taupe max-w-4xl mt-4">
+      Right now I'm at Klick Health building AI solutions for healthcare—mostly working with GPT, LLaMa, and Claude to solve real-world problems in a regulated space. Before that I was a prompt engineer at Meta. I speak English, Portuguese, and French, which turns out to matter more than I expected when you're working with international teams and multilingual data. Most of my side projects are experiments to see if something works: can I make legal precedent actually searchable, can I help someone navigate building code faster, can I predict Bitcoin movements (jury's still out on that one).
+    </p>
+    <p class="text-lg leading-relaxed text-taupe max-w-4xl mt-4">
+      I'm a big proponent of using the right tool for the job. Gen AI isn't always the answer—sometimes a BERT model or an XGBoost classifier is exactly what you need. I like finding that line between what's technically impressive and what actually solves the problem. Usually the best solution is simpler than you think.
     </p>
   </section>
 

@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { getAbsoluteUrl } from '$lib/utils/url';
   import { page } from '$app/stores';
 
   const version = $derived($page.data.siteConfig?.version || '0.0.1');
@@ -15,11 +14,9 @@
       </div>
 
       <!-- Footer links -->
-      <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
-        <div class="text-taupe text-sm">
-          <span class="text-taupe/60">v{version}</span>
-        </div>
-        <div class="flex gap-6 text-taupe">
+      <div class="flex flex-col gap-4">
+        <!-- Links - always on top -->
+        <div class="flex gap-6 text-taupe justify-center sm:justify-end">
           <a href="https://linkedin.com/in/kmaurinjones" class="hover:text-terracotta transition-colors">
             LinkedIn
           </a>
@@ -29,6 +26,10 @@
           <a href="/contact" class="hover:text-terracotta transition-colors">
             Contact
           </a>
+        </div>
+        <!-- Version - always on bottom -->
+        <div class="text-taupe text-sm text-center sm:text-left">
+          <span class="text-taupe/60">v{version}</span>
         </div>
       </div>
     </div>

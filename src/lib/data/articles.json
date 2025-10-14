@@ -1,0 +1,93 @@
+[
+  {
+    "slug": "evaluating-randomness-in-generative-ai-large-language-models",
+    "title": "Evaluating Randomness in Generative AI & Large Language Models",
+    "date": "November 04, 2024",
+    "categories": [
+      "large language models",
+      "statistics",
+      "artificial intelligence",
+      "random",
+      "machine learning"
+    ],
+    "url": "https://medium.com/@kmaurinjones/evaluating-randomness-in-generative-ai-large-language-models-099f747b28e2"
+  },
+  {
+    "slug": "how-i-beat-wordle-for-good",
+    "title": "How I Beat Wordle For Good",
+    "date": "April 04, 2023",
+    "categories": [
+      "wordle",
+      "probability",
+      "math",
+      "data science",
+      "computational linguistics"
+    ],
+    "url": "https://medium.com/@kmaurinjones/how-i-beat-wordle-once-and-for-all-322c8641a70d"
+  },
+  {
+    "slug": "accelerating-home-building-code-research-with-retrieval-augmented-generation-rag",
+    "title": "Accelerating Home Building Code Research with Retrieval-Augmented Generation (RAG)",
+    "date": "February 18, 2025",
+    "categories": [
+      "retrieval augmented gen",
+      "large language models",
+      "ai",
+      "artificial intelligence",
+      "openai"
+    ],
+    "url": "https://medium.com/@kmaurinjones/accelerating-building-code-research-with-rag-an-in-depth-look-c6c89d811f23"
+  },
+  {
+    "slug": "i-made-a-bot-that-can-play-the-wiki-game-python-code-included",
+    "title": "I Made a Bot that Can Play the Wiki Game (Python code included!)",
+    "date": "January 18, 2024",
+    "categories": [
+      "nlp",
+      "transformers",
+      "ai",
+      "wikipedia",
+      "data science"
+    ],
+    "url": "https://medium.com/@kmaurinjones/how-i-made-a-bot-that-can-play-the-wiki-game-python-code-included-5d207254cf33"
+  },
+  {
+    "slug": "joyful-bytes-spreading-positivity-through-daily-ai-generated-art",
+    "title": "Joyful Bytes: Spreading Positivity Through Daily AI-Generated Art",
+    "date": "October 28, 2024",
+    "categories": [
+      "artifical intellegence",
+      "machine learning ai",
+      "python",
+      "image ai",
+      "large language models"
+    ],
+    "url": "https://medium.com/@kmaurinjones/joyful-bytes-spreading-positivity-through-daily-ai-generated-art-07e29004ed72"
+  },
+  {
+    "slug": "understanding-the-unseen-revolutionizing-access-to-justice-through-data-science-natural-language-processing",
+    "title": "Understanding the Unseen: Revolutionizing Access to Justice through Data Science & Natural Language Processing",
+    "date": "June 16, 2023",
+    "categories": [
+      "law",
+      "nlp",
+      "data science",
+      "legal",
+      "machine learning"
+    ],
+    "url": "https://medium.com/@kmaurinjones/understanding-the-unseen-revolutionizing-access-to-justice-through-data-science-natural-language-7f73fd35999d"
+  },
+  {
+    "slug": "365-days-of-news-headlines-a-longitudinal-analysis-driven-by-data-science",
+    "title": "365 Days of News Headlines — A Longitudinal Analysis Driven by Data Science",
+    "date": "October 19, 2024",
+    "categories": [
+      "data science",
+      "algorithms",
+      "large language models",
+      "artificial intelligence",
+      "ai"
+    ],
+    "url": "https://medium.com/@kmaurinjones/365-days-of-new-headlines-a-longitudinal-analysis-driven-by-data-science-b39c9ac9d8e5"
+  }
+]

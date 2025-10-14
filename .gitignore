@@ -3,6 +3,8 @@
 ignore/*
 *CLAUDE.md*
 *CHANGELOG.md
+completed-articles/
+.ruff_cache/
 
 # Image editing for image assets
 *image-editing/
@@ -63,3 +65,16 @@ coverage
 
 # Personal notes
 SCRATCH.md
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv
+venv/
+ENV/
+env/
+*.egg-info/
+.pytest_cache/

@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+@plugin '@tailwindcss/typography';
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Crimson+Pro:wght@400;600&family=JetBrains+Mono:wght@400;500&display=swap');
 
 @theme {
@@ -15,8 +16,35 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100vw;
 }
 
 body {
   font-feature-settings: 'rlig' 1, 'calt' 1;
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+/* Ensure all elements within articles respect container width */
+article * {
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* Specifically handle images, figures, and other media */
+article img,
+article picture,
+article figure,
+article video,
+article iframe {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+/* Handle Medium-specific containers */
+article div,
+article section,
+article aside {
+  max-width: 100% !important;
 }
