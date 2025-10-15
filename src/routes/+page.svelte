@@ -16,15 +16,15 @@
   const projects = [
     {
       title: "Housing Law Insights",
-      description: "Made legal precedent searchable by pulling structured data from 50,000 housing cases and building a classifier to predict outcomes. Years of case law became navigable once the data was structured properly."
+      description: "End-to-end Generative AI solution using fine-tuned LLaMa model to extract structured data from 50,000 legal cases. Used XGBoost model (achieving 0.9 F1 score on case outcome prediction) for historical case analysis. Deployed interactive dashboard to explore legal data patterns."
     },
     {
       title: "Ontario Building Code RAG",
-      description: "A friend was spending 30 minutes manually searching building code documents for each renovation question. Built a RAG system to make it conversational—turned out query expansion handled it well without adding complexity."
+      description: "Focused on meaningful user impact and elegant backend optimizations, this project was completed to help a friend navigate the 800k token Ontario Building Code more easily for house improvements. This app enables Natural Language 'searching' of the document's contents in a user-friendly manner. Inference optimizations implemented to decrease inference time, and cost, while maintaining search and response quality."
     },
     {
       title: "Hack the Threat 2023 Winner",
-      description: "Built a data anonymization tool implementing k-anonymity. Won Audience Choice. The design focused on making privacy configuration accessible to non-technical users without requiring code."
+      description: "Developed a privacy-preserving data anonymization application implementing k-anonymity algorithm. Created user-friendly interface allowing non-technical users to configure anonymization settings without coding knowledge. Won Audience Choice award."
     }
   ];
 </script>
@@ -65,7 +65,7 @@
   <section class="mb-16">
     <blockquote class="border-l-4 border-terracotta pl-6 lg:pl-8 py-4 bg-caramel/5">
       <p class="text-lg lg:text-xl leading-relaxed text-primary font-medium">
-        I didn't start in computer science. I started with audio engineering and languages. During undergrad, I found myself analyzing a thousand transcripts of multilingual data and realized this was the work I wanted to do.
+        I don't come from a strict computer science background. I have always been a curious, scrappy creative who has bounced around between Audio Engineering, Applied Lingusitics, Data Science, and Generative AI.
       </p>
     </blockquote>
   </section>
@@ -73,13 +73,13 @@
   <!-- Additional Description -->
   <section class="mb-16">
     <p class="text-lg leading-relaxed text-taupe max-w-4xl">
-      That research project turned into data science, then computational linguistics, then machine learning, and now generative AI. I didn't know what to call it at the time—just knew I wanted more of whatever it was. The path from audio production to AI wasn't linear, but looking back, it makes sense. Both are about patterns, both require you to hear what's actually there versus what you expect.
+      In undergrad, I worked on a research project that leveraged 1000 multilingual transcripts from the Philippines, and this made me realize there was an intersection between languages and quantitive analysis. It was my first foray into data science, computational linguistics, and statistics (even though, looking back at it now, all I did really was manually computing summary statistics), and I've never looked back.
     </p>
     <p class="text-lg leading-relaxed text-taupe max-w-4xl mt-4">
-      Right now I'm at Klick Health building AI solutions for healthcare—mostly working with GPT, LLaMa, and Claude to solve real-world problems in a regulated space. Before that I was a prompt engineer at Meta. I speak English, Portuguese, and French, which turns out to matter more than I expected when you're working with international teams and multilingual data. Most of my side projects are experiments to see if something works: can I make legal precedent actually searchable, can I help someone navigate building code faster, can I predict Bitcoin movements (jury's still out on that one).
+      In my current role, I use state-of-the-art to solve complex problems in life sciences and pharmaceuticals spaces. I provide SME support on and lead the development of GenAI solutions for internal and external teams, and train our teams on how to use these tools effectively. 
     </p>
     <p class="text-lg leading-relaxed text-taupe max-w-4xl mt-4">
-      I'm a big proponent of using the right tool for the job. Gen AI isn't always the answer—sometimes a BERT model or an XGBoost classifier is exactly what you need. I like finding that line between what's technically impressive and what actually solves the problem. Usually the best solution is simpler than you think.
+      With the current landscape of GenAI and technology as a whole, 'using the right tool for the job' has a different definition almost every week, and a part of my role is to always be able to answer this question. There's never a dull moment.
     </p>
   </section>
 
@@ -111,29 +111,6 @@
           <p class="text-taupe leading-relaxed">{project.description}</p>
         </div>
       {/each}
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section class="mb-16">
-    <h2 class="text-2xl lg:text-3xl font-bold text-primary mb-8">Technical Skills</h2>
-    <div class="grid gap-6 md:grid-cols-2">
-      <div class="bg-base border border-taupe/20 rounded-lg p-6">
-        <h3 class="text-lg font-semibold text-terracotta mb-3">ML & GenAI</h3>
-        <p class="text-taupe">PyTorch, HuggingFace, LangChain, Large Language Models, Fine-tuning, Prompt Engineering</p>
-      </div>
-      <div class="bg-base border border-taupe/20 rounded-lg p-6">
-        <h3 class="text-lg font-semibold text-terracotta mb-3">MLOps & Deployment</h3>
-        <p class="text-taupe">Cloud ML Architecture, Model Monitoring, CI/CD for ML, Scaling AI Solutions</p>
-      </div>
-      <div class="bg-base border border-taupe/20 rounded-lg p-6">
-        <h3 class="text-lg font-semibold text-terracotta mb-3">Data Engineering</h3>
-        <p class="text-taupe">Python, Apache Spark, SQL, NoSQL, ETL Processes, Data Transformation</p>
-      </div>
-      <div class="bg-base border border-taupe/20 rounded-lg p-6">
-        <h3 class="text-lg font-semibold text-terracotta mb-3">Cloud & APIs</h3>
-        <p class="text-taupe">AWS, Azure, GCP, OpenAI, Anthropic, HuggingFace</p>
-      </div>
     </div>
   </section>
 
