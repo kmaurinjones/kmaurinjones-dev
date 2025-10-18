@@ -20,9 +20,6 @@
           <a href="https://linkedin.com/in/kmaurinjones" class="hover:text-terracotta transition-colors">
             LinkedIn
           </a>
-          <a href="https://medium.com/@kmaurinjones" class="hover:text-terracotta transition-colors">
-            Medium
-          </a>
           <a href="/contact" class="hover:text-terracotta transition-colors">
             Contact
           </a>

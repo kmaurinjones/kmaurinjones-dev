@@ -5,6 +5,7 @@ ignore/*
 *CHANGELOG.md
 completed-articles/
 .ruff_cache/
+.github/WRITING_GUIDELINES.md
 
 # Image editing for image assets
 *image-editing/

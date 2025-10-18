@@ -25,8 +25,8 @@
   <div class="max-w-6xl mx-auto px-6 py-6">
     <div class="flex items-center justify-between md:grid md:grid-cols-3">
       <!-- Logo -->
-      <a href="/" class="flex-shrink-0 transition-opacity hover:opacity-70">
-        <img src="/kmj-icon.svg" alt="KMJ" class="h-10 w-10" />
+      <a href="/" class="inline-block leading-[0] transition-opacity hover:opacity-70 md:justify-self-start md:self-center">
+        <img src="/kmj-icon.svg" alt="KMJ" width="32" height="32" class="block" />
       </a>
 
       <!-- Desktop Navigation Links -->

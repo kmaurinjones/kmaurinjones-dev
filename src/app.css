@@ -1,6 +1,6 @@
 @import 'tailwindcss';
-@plugin '@tailwindcss/typography';
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Crimson+Pro:wght@400;600&family=JetBrains+Mono:wght@400;500&display=swap');
+@plugin '@tailwindcss/typography';
 
 @theme {
   --color-base: #F5F1EB;
@@ -27,6 +27,12 @@ body {
 }
 
 /* Ensure all elements within articles respect container width */
+@media (max-width: 768px) {
+  article {
+    max-width: 100vw !important;
+  }
+}
+
 article * {
   max-width: 100% !important;
   box-sizing: border-box !important;

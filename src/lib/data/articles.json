@@ -1,5 +1,17 @@
 [
   {
+    "slug": "recreating-wordle-with-ai-assistance",
+    "title": "Recreating Wordle with AI Assistance: A One-Day Build",
+    "date": "October 17, 2025",
+    "categories": [
+      "wordle",
+      "fastapi",
+      "web development",
+      "ai-assisted coding",
+      "game development"
+    ]
+  },
+  {
     "slug": "evaluating-randomness-in-generative-ai-large-language-models",
     "title": "Evaluating Randomness in Generative AI & Large Language Models",
     "date": "November 04, 2024",
