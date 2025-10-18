@@ -1,0 +1,86 @@
+================================================================================
+DEPLOYMENT SUMMARY: kmaurinjones.dev
+================================================================================
+Deployed: October 17, 2025
+
+SITE DETAILS:
+- URL: https://kmaurinjones.dev (and www.kmaurinjones.dev)
+- Type: Static SvelteKit application
+- Framework: SvelteKit with adapter-static
+- Build tool: Vite
+- CDN/Proxy: Cloudflare (with SSL/TLS)
+
+DIRECTORY STRUCTURE:
+- Git repository: /home/kmaurinjones/projects/kmaurinjones-dev
+- Production files: /home/kmaurinjones/projects/sites/kmaurinjones-dev
+- Build output: build/ (generated from SvelteKit)
+
+NGINX CONFIGURATION:
+- Config file: /etc/nginx/sites-available/kmaurinjones-dev
+- Enabled: /etc/nginx/sites-enabled/kmaurinjones-dev (symlink)
+- Backup: /home/kmaurinjones/projects/shared/systemd-units/nginx-kmaurinjones-dev.conf
+- Serves static files from: /home/kmaurinjones/projects/sites/kmaurinjones-dev
+- Port: 80 (HTTP only - Cloudflare handles HTTPS)
+- Cloudflare IP restoration: Configured with set_real_ip_from directives
+
+CLOUDFLARE CONFIGURATION:
+- Proxy: Enabled (orange cloud)
+- SSL Mode: Flexible (Cloudflare to visitor: HTTPS, Cloudflare to Pi: HTTP)
+- Real IP restoration: Configured in nginx
+- DDoS protection: Active
+- CDN: Active
+- See CLOUDFLARE_SETUP.md for detailed setup instructions
+
+DEPLOYMENT SCRIPT:
+- Location: /home/kmaurinjones/projects/kmaurinjones-dev/deploy.sh
+- Usage: cd /home/kmaurinjones/projects/kmaurinjones-dev && ./deploy.sh
+- Actions: git pull → npm install → uv sync → npm run build → copy files
+
+DEPENDENCIES:
+- Node.js packages: SvelteKit, TailwindCSS, TypeScript, Flowbite
+- Python packages (uv): beautifulsoup4, lxml (for Medium article sync script)
+
+KEY FILES:
+- svelte.config.js: Configured with adapter-static and prerender error handling
+- src/routes/+layout.js: Enables prerendering for all routes
+- scripts/sync-medium-articles.py: Syncs Medium articles to Svelte pages
+
+FEATURES:
+- Portfolio/personal website
+- Blog posts (synced from Medium)
+- Static site generation (no SSR)
+- All routes prerendered at build time
+- Free SSL/TLS via Cloudflare
+- DDoS protection and CDN
+
+TESTING:
+✓ Homepage loads: http://kmaurinjones.dev
+✓ Thoughts page loads: http://kmaurinjones.dev/thoughts
+✓ Static assets served correctly
+✓ Nginx permissions configured properly
+✓ Cloudflare IP restoration configured
+✓ Security headers added
+
+CLOUDFLARE SETUP STEPS:
+1. Add domain to Cloudflare (dash.cloudflare.com)
+2. Configure A records pointing to Pi IP (proxied/orange cloud)
+3. Update nameservers at domain registrar
+4. Set SSL/TLS mode to "Flexible"
+5. Enable "Always Use HTTPS"
+6. Wait for DNS propagation (typically < 5 minutes)
+
+Full guide: See CLOUDFLARE_SETUP.md
+
+MAINTENANCE:
+To update the site:
+1. Make changes on MacBook and push to git
+2. SSH to Pi: ssh kmaurinjones@<pi-ip>
+3. Run: cd /home/kmaurinjones/projects/kmaurinjones-dev && ./deploy.sh
+
+SECURITY:
+- Cloudflare DDoS protection active
+- Security headers configured in nginx
+- Real visitor IPs logged (not Cloudflare IPs)
+- Automatic HTTPS redirects via Cloudflare
+
+================================================================================
