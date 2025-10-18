@@ -7,6 +7,7 @@ completed-articles/
 .ruff_cache/
 .github/WRITING_GUIDELINES.md
 docs_ignored/
+drafts/
 
 # Image editing for image assets
 *image-editing/
