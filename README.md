@@ -1,19 +1,9 @@
 # Kai Maurin-Jones
 
-I build pragmatic AI systems for regulated spaces—shipping fast without breaking rules.
+Personal portfolio website showcasing my work building pragmatic AI systems for regulated spaces. Built with SvelteKit and deployed on a Raspberry Pi.
 
-Visit [kmaurinjones.dev](https://kmaurinjones.dev) to learn more about my work, projects, and experience.
+**Visit the live site:** [kmaurinjones.dev](https://kmaurinjones.dev)
 
-## Development Setup
+---
 
-```bash
-# Install dependencies
-npm install
-
-# Run the dev server
-npm run dev
-```
-
-The site will be available at `http://localhost:5173`
-
-Site configuration (version, contact info, etc.) is managed in `site-config.yaml`
+*This repository is public for transparency and to showcase my development work. The site is not intended to be duplicated or used as a template.*
