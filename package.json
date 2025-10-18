@@ -32,5 +32,8 @@
 		"flowbite-svelte": "^1.17.4",
 		"flowbite-svelte-icons": "^3.0.0",
 		"js-yaml": "^4.1.0"
+	},
+	"overrides": {
+		"cookie": "^0.7.0"
 	}
 }
