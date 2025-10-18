@@ -6,6 +6,7 @@ ignore/*
 completed-articles/
 .ruff_cache/
 .github/WRITING_GUIDELINES.md
+docs_ignored/
 
 # Image editing for image assets
 *image-editing/
