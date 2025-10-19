@@ -1,7 +1,7 @@
 <script lang="ts">
   import { page } from '$app/stores';
 
-  const version = $derived($page.data.siteConfig?.version || '0.0.1');
+  const version = $derived($page.data.siteConfig.version);
 </script>
 
 <footer class="border-t border-taupe/20 bg-base">
