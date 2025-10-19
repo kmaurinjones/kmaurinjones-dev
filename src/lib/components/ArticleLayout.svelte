@@ -23,7 +23,7 @@
 </svelte:head>
 
 <div class="min-h-screen {mounted ? 'opacity-100' : 'opacity-0'} transition-opacity duration-700">
-  <article class="max-w-4xl mx-auto px-4 sm:px-6 w-full overflow-x-hidden">
+  <article class="max-w-4xl mx-auto px-4 sm:px-6 w-full">
     <!-- Back link -->
     <a href="/thoughts" class="inline-flex items-center text-taupe hover:text-terracotta transition-colors mb-8">
       <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -53,7 +53,7 @@
     </header>
 
     <!-- Article content -->
-    <div class="prose prose-lg max-w-none mb-12 overflow-x-hidden w-full
+    <div class="prose prose-lg max-w-none mb-12 w-full
                 [&_*]:max-w-full [&_*]:box-border
                 [&_img]:max-w-full [&_img]:h-auto
                 [&_picture]:max-w-full [&_picture]:block

@@ -1,5 +1,18 @@
 [
   {
+    "slug": "keeping-personal-projects-alive-automated-streamlit-monitoring",
+    "title": "Keeping Personal Projects Alive: Automated Streamlit Monitoring with Playwright",
+    "date": "October 18, 2025",
+    "categories": [
+      "Python",
+      "Streamlit",
+      "Playwright",
+      "Automation",
+      "DevOps",
+      "Web Scraping"
+    ]
+  },
+  {
     "slug": "recreating-wordle-with-ai-assistance",
     "title": "Recreating Wordle with AI Assistance: A One-Day Build",
     "date": "October 17, 2025",
