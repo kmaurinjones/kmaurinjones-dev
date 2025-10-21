@@ -38,7 +38,7 @@
             <li>• Architecting cloud-native GenAI healthcare applications using PyTorch, HuggingFace, and custom ML pipelines</li>
             <li>• Leading development of healthcare-focused GenAI tools for clinical decision-making and patient outcomes</li>
             <li>• Implementing scalable AI architectures for processing and analyzing healthcare data, reducing manual tasks</li>
-            <li>• Collaborating with healthcare professionals to translate clinical requirements into practical AI solutions generating over $500k in revenue</li>
+            <li>• Collaborating with healthcare professionals to translate clinical requirements into practical AI solutions</li>
           </ul>
         </div>
 
