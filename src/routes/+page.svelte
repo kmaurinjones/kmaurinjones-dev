@@ -65,7 +65,7 @@
   <section class="mb-16">
     <blockquote class="border-l-4 border-terracotta pl-6 lg:pl-8 py-4 bg-caramel/5">
       <p class="text-lg lg:text-xl leading-relaxed text-primary font-medium">
-        I don't come from a strict computer science background. I have always been a curious, scrappy creative who has bounced around between Audio Engineering, Applied Lingusitics, Data Science, and Generative AI.
+        I don't come from a strict computer science background. I have always been a curious, scrappy creative who has bounced around between Audio Engineering, Applied Linguistics, Data Science, and Generative AI.
       </p>
     </blockquote>
   </section>
