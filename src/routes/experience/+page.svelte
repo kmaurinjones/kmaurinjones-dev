@@ -18,7 +18,7 @@
         Experience
       </h1>
       <p class="text-lg text-taupe max-w-2xl">
-        Multilingual Data Scientist specializing in regulated industries, building robust AI architectures to solve complex business challenges. Experienced in implementing end-to-end Conversational AI solutions with a focus on production-ready systems that deliver specific and measurable outcomes.
+        Multilingual Data Scientist specializing in regulated industries, building robust AI architectures to solve complex business challenges. Experienced in implementing end-to-end AI solutions with a focus on production-ready systems that deliver specific and measurable outcomes.
       </p>
     </div>
 
