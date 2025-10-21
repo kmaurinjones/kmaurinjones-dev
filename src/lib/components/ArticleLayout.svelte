@@ -33,15 +33,15 @@
     </a>
 
     <!-- Article header -->
-    <header class="mb-12">
+    <header class="mb-12 text-center">
       <h1 class="text-3xl lg:text-4xl font-bold text-primary mb-4 break-words">
         {title}
       </h1>
-      <div class="flex flex-wrap items-center gap-4 text-taupe">
+      <div class="flex flex-wrap items-center justify-center gap-4 text-taupe">
         <time datetime="{date}">{date}</time>
         {#if categories.length > 0}
           <span class="text-taupe/40">•</span>
-          <div class="flex flex-wrap gap-2">
+          <div class="flex flex-wrap gap-2 justify-center">
             {#each categories as category}
               <span class="px-3 py-1 bg-caramel/10 text-taupe text-sm rounded-full">
                 {category}
