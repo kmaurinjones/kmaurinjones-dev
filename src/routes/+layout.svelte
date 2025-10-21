@@ -7,12 +7,13 @@
 </script>
 
 <svelte:head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 </svelte:head>
 
 <div class="min-h-screen bg-base text-primary font-sans flex flex-col">
 	<Nav />
-	<main class="flex-1 max-w-6xl mx-auto px-6 py-8 lg:py-16">
+	<main class="flex-1 w-full max-w-6xl mx-auto px-6 py-8 lg:py-16">
 		{@render children?.()}
 	</main>
 	<Footer />
