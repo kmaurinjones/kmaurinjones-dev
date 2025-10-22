@@ -17,7 +17,7 @@
 	<!-- Hero Image -->
 	<figure class="my-8">
 		<img
-			src="/images/thoughts/keeping-personal-projects-alive-automated-streamlit-monitoring/hero.png"
+			src="/images/thoughts/keeping-personal-projects-alive-automated-streamlit-monitoring/hero.webp"
 			alt="Abstract visualization of automated monitoring system keeping Streamlit apps awake"
 			class="w-[70%] md:w-[60%] lg:w-[50%] mx-auto"
 		/>

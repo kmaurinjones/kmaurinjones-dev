@@ -9,8 +9,8 @@
     <div class="flex flex-col gap-6">
       <!-- Note about subdomains -->
       <div class="text-sm text-taupe leading-relaxed max-w-4xl">
-        <strong class="text-primary">Note:</strong> Personal projects at this site's subdomains are typically not actively maintained or monitored.
-        If any are down or experiencing issues, please <a href="https://github.com/kmaurinjones/kmaurinjones-dev/issues/new/choose" target="_blank" rel="noopener noreferrer" class="text-terracotta hover:underline">open an issue</a> using the bug report template <a href="https://github.com/kmaurinjones/kmaurinjones-dev" target="_blank" rel="noopener noreferrer" class="text-terracotta hover:underline">in this repo</a>.
+        <strong class="text-primary">Note:</strong> Personal projects at this site's subdomains are not actively maintained.
+        If any are down or experiencing issues, please <a href="https://github.com/kmaurinjones/kmaurinjones-dev/issues/new/choose" target="_blank" rel="noopener noreferrer" class="text-terracotta hover:underline">open an issue</a>.
       </div>
 
       <!-- Footer links -->
@@ -26,7 +26,7 @@
         </div>
         <!-- Version - always on bottom -->
         <div class="text-taupe text-sm text-center sm:text-left">
-          <span class="text-taupe/60">v{version}</span>
+          <a href="/changelog" class="text-taupe/60 hover:text-terracotta transition-colors">v{version}</a>
         </div>
       </div>
     </div>

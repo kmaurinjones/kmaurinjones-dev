@@ -22,7 +22,7 @@
 >
 	<!-- Hero Image -->
 	<figure class="my-8">
-		<img src="/images/thoughts/giving-ai-agents-robust-image-generation-capabilities/hero.png"
+		<img src="/images/thoughts/giving-ai-agents-robust-image-generation-capabilities/hero.webp"
 			 alt="Abstract digital illustration of AI neural networks transforming into vibrant images"
 			 class="w-[70%] md:w-[60%] lg:w-[50%] mx-auto" />
 		<figcaption class="text-center text-sm text-taupe mt-2">
@@ -99,20 +99,20 @@
 	<p>Here are a few examples generated while writing this article, demonstrating different use cases:</p>
 
 	<figure class="my-8">
-		<img src="/images/thoughts/giving-ai-agents-robust-image-generation-capabilities/ui-mockup-example.png"
+		<img src="/images/thoughts/giving-ai-agents-robust-image-generation-capabilities/ui-mockup-example.webp"
 			 alt="Modern task management dashboard UI mockup with cream background and navy blue accents"
 			 class="w-[70%] md:w-[60%] lg:w-[50%] mx-auto" />
 		<figcaption class="text-center text-sm text-taupe mt-2">
-			UI mockup generated with FLUX Pro (16:9, PNG). Prompt: "Clean minimal UI mockup of a modern task management dashboard, soft cream background, navy blue headers, terracotta accent buttons."
+			UI mockup generated with FLUX Pro (16:9, WebP). Prompt: "Clean minimal UI mockup of a modern task management dashboard, soft cream background, navy blue headers, terracotta accent buttons."
 		</figcaption>
 	</figure>
 
 	<figure class="my-8">
-		<img src="/images/thoughts/giving-ai-agents-robust-image-generation-capabilities/technical-diagram-example.png"
+		<img src="/images/thoughts/giving-ai-agents-robust-image-generation-capabilities/technical-diagram-example.webp"
 			 alt="Abstract technical diagram showing network nodes and data flow"
 			 class="w-[70%] md:w-[60%] lg:w-[50%] mx-auto" />
 		<figcaption class="text-center text-sm text-taupe mt-2">
-			Technical illustration generated with FLUX Pro (3:2, PNG). Prompt: "Abstract technical illustration of connected network nodes and data flow, geometric shapes, modern clean design."
+			Technical illustration generated with FLUX Pro (3:2, WebP). Prompt: "Abstract technical illustration of connected network nodes and data flow, geometric shapes, modern clean design."
 		</figcaption>
 	</figure>
 

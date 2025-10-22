@@ -1,0 +1,29 @@
+[
+  {
+    "slug": "recreating-nyt-connections-when-four-guesses-just-isnt-enough",
+    "title": "NYT Connections Clone",
+    "summary": "An unlimited-guess version of NYT Connections that removes the four-strike limit. Built with FastAPI, SQLite, and vanilla JavaScript, it includes a calendar widget for browsing historical puzzles. Perfect for learning the categories you'd otherwise never see.",
+    "image": "/images/projects/recreating-nyt-connections-when-four-guesses-just-isnt-enough/card.webp",
+    "articleUrl": "/thoughts/recreating-nyt-connections-when-four-guesses-just-isnt-enough",
+    "projectUrl": "https://connections.kmaurinjones.dev",
+    "categories": ["Game Development", "FastAPI", "SQLite", "Web Development", "Python"]
+  },
+  {
+    "slug": "recreating-wordle-with-ai-assistance",
+    "title": "Wordle Recreation",
+    "summary": "A one-day build recreating Wordle with quality of life improvements: calendar widget for browsing any historical puzzle from June 2021 onwards, click any tile to edit instead of just the last one. Built with FastAPI and vanilla JavaScript using AI-assisted development.",
+    "image": "/images/projects/recreating-wordle-with-ai-assistance/card.webp",
+    "articleUrl": "/thoughts/recreating-wordle-with-ai-assistance",
+    "projectUrl": "https://wordle.kmaurinjones.dev",
+    "categories": ["Game Development", "FastAPI", "Web Development", "AI-Assisted Coding"]
+  },
+  {
+    "slug": "accelerating-home-building-code-research-with-retrieval-augmented-generation-rag",
+    "title": "Ontario Building Code RAG",
+    "summary": "A Retrieval-Augmented Generation system that transforms searching the 800,000-word Ontario Building Code from 10-30 minute keyword searches into instant, conversational queries. Features intelligent query expansion, accurate citations, and real-time token tracking. Self-serve with user's OpenAI API key.",
+    "image": "/images/projects/accelerating-home-building-code-research-with-retrieval-augmented-generation-rag/card.webp",
+    "articleUrl": "/thoughts/accelerating-home-building-code-research-with-retrieval-augmented-generation-rag",
+    "projectUrl": "https://buildy.streamlit.app/",
+    "categories": ["Retrieval Augmented Gen", "Large Language Models", "AI", "OpenAI", "Python"]
+  }
+]

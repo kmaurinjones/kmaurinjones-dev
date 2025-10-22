@@ -25,6 +25,18 @@
     ]
   },
   {
+    "slug": "recreating-nyt-connections-when-four-guesses-just-isnt-enough",
+    "title": "Recreating NYT Connections: When Four Guesses Just Isn't Enough",
+    "date": "October 17, 2025",
+    "categories": [
+      "Game Development",
+      "FastAPI",
+      "SQLite",
+      "Web Development",
+      "Python"
+    ]
+  },
+  {
     "slug": "recreating-wordle-with-ai-assistance",
     "title": "Recreating Wordle with AI Assistance: A One-Day Build",
     "date": "October 17, 2025",

@@ -62,13 +62,13 @@ article code {
 }
 
 /* Improve link affordance for accessibility */
-a[href^="http"]:not([class*="border"]):not([class*="flex"]) {
+a[href^="http"]:not([class*="border"]):not([class*="flex"]):not(footer a) {
   text-decoration: underline;
   text-decoration-color: currentColor;
   text-decoration-thickness: 1px;
   text-underline-offset: 2px;
 }
 
-a[href^="http"]:not([class*="border"]):not([class*="flex"]):hover {
+a[href^="http"]:not([class*="border"]):not([class*="flex"]):not(footer a):hover {
   text-decoration-thickness: 2px;
 }
