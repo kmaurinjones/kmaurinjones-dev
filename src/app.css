@@ -60,3 +60,15 @@ article pre {
 article code {
   word-break: break-all;
 }
+
+/* Improve link affordance for accessibility */
+a[href^="http"]:not([class*="border"]):not([class*="flex"]) {
+  text-decoration: underline;
+  text-decoration-color: currentColor;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+a[href^="http"]:not([class*="border"]):not([class*="flex"]):hover {
+  text-decoration-thickness: 2px;
+}

@@ -10,14 +10,14 @@
       <!-- Note about subdomains -->
       <div class="text-sm text-taupe leading-relaxed max-w-4xl">
         <strong class="text-primary">Note:</strong> Personal projects at this site's subdomains are typically not actively maintained or monitored.
-        If any are down or experiencing issues, please <a href="https://github.com/kmaurinjones/kmaurinjones-dev/issues/new/choose" class="text-terracotta hover:underline">open an issue</a> using the bug report template <a href="https://github.com/kmaurinjones/kmaurinjones-dev" class="text-terracotta hover:underline">in this repo</a>.
+        If any are down or experiencing issues, please <a href="https://github.com/kmaurinjones/kmaurinjones-dev/issues/new/choose" target="_blank" rel="noopener noreferrer" class="text-terracotta hover:underline">open an issue</a> using the bug report template <a href="https://github.com/kmaurinjones/kmaurinjones-dev" target="_blank" rel="noopener noreferrer" class="text-terracotta hover:underline">in this repo</a>.
       </div>
 
       <!-- Footer links -->
       <div class="flex flex-col gap-4">
         <!-- Links - always on top -->
         <div class="flex gap-6 text-taupe justify-center sm:justify-end">
-          <a href="https://linkedin.com/in/kmaurinjones" class="hover:text-terracotta transition-colors">
+          <a href="https://linkedin.com/in/kmaurinjones" target="_blank" rel="noopener noreferrer" class="hover:text-terracotta transition-colors">
             LinkedIn
           </a>
           <a href="/contact" class="hover:text-terracotta transition-colors">

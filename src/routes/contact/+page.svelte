@@ -40,9 +40,10 @@
           href={link.url}
           target={link.name !== 'Email' ? '_blank' : undefined}
           rel={link.name !== 'Email' ? 'noopener noreferrer' : undefined}
+          aria-label={link.name === 'Email' ? 'Send email to kai@kmaurinjones.dev' : `Visit my ${link.name} profile (opens in new tab)`}
           class="group flex items-center justify-center gap-4 px-8 py-4 bg-base border-2 border-primary rounded-lg hover:bg-primary hover:text-base transition-all duration-300 text-primary"
         >
-          <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d={link.icon} />
           </svg>
           <span class="text-lg font-semibold">{link.name}</span>
