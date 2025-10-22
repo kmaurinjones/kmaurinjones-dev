@@ -23,10 +23,13 @@
           <a href="/contact" class="hover:text-terracotta transition-colors">
             Contact
           </a>
+          <a href="/changelog" class="hover:text-terracotta transition-colors">
+            Changelog
+          </a>
         </div>
         <!-- Version - always on bottom -->
         <div class="text-taupe text-sm text-center sm:text-left">
-          <a href="/changelog" class="text-taupe/60 hover:text-terracotta transition-colors">v{version}</a>
+          v{version}
         </div>
       </div>
     </div>
