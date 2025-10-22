@@ -5,21 +5,46 @@
     title,
     date,
     categories = [],
+    description,
+    image,
+    slug,
     children
   }: {
     title: string;
     date: string;
     categories?: string[];
+    description?: string;
+    image?: string;
+    slug?: string;
     children: any;
   } = $props();
 
   let mounted = $state(false);
   onMount(() => mounted = true);
+
+  const defaultDescription = `${title} - Read on Kai Maurin-Jones' blog`;
+  const metaDescription = description || defaultDescription;
+  const articleUrl = slug ? `https://kmaurinjones.dev/thoughts/${slug}` : 'https://kmaurinjones.dev/thoughts';
+  const ogImage = image || 'https://kmaurinjones.dev/images/cropped.webp';
 </script>
 
 <svelte:head>
   <title>{title} | Kai Maurin-Jones</title>
-  <meta name="description" content="{title} - Read on Kai Maurin-Jones' blog" />
+  <meta name="description" content="{metaDescription}" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="{articleUrl}" />
+  <meta property="og:title" content="{title} | Kai Maurin-Jones" />
+  <meta property="og:description" content="{metaDescription}" />
+  <meta property="og:image" content="{ogImage}" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="{articleUrl}" />
+  <meta property="twitter:title" content="{title} | Kai Maurin-Jones" />
+  <meta property="twitter:description" content="{metaDescription}" />
+  <meta property="twitter:image" content="{ogImage}" />
 </svelte:head>
 
 <div class="min-h-screen {mounted ? 'opacity-100' : 'opacity-0'} transition-opacity duration-700">

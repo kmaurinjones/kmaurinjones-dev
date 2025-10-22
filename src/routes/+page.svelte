@@ -32,6 +32,20 @@
 <svelte:head>
   <title>Kai Maurin-Jones | Forever Builder</title>
   <meta name="description" content="Building things to see if they'll work. Data Scientist working in healthcare AI." />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://kmaurinjones.dev/" />
+  <meta property="og:title" content="Kai Maurin-Jones | Forever Builder" />
+  <meta property="og:description" content="Building things to see if they'll work. Data Scientist working in healthcare AI." />
+  <meta property="og:image" content="https://kmaurinjones.dev/images/cropped.webp" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://kmaurinjones.dev/" />
+  <meta property="twitter:title" content="Kai Maurin-Jones | Forever Builder" />
+  <meta property="twitter:description" content="Building things to see if they'll work. Data Scientist working in healthcare AI." />
+  <meta property="twitter:image" content="https://kmaurinjones.dev/images/cropped.webp" />
 </svelte:head>
 
 <div class="min-h-screen {mounted ? 'opacity-100' : 'opacity-0'} transition-opacity duration-700">

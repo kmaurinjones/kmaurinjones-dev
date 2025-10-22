@@ -5,6 +5,9 @@
 		title: "Giving AI Agents Robust Image Generation Capabilities",
 		date: "October 20, 2025",
 		categories: ["MCP", "Image Generation", "FLUX", "Developer Tools", "AI"],
+		slug: "giving-ai-agents-robust-image-generation-capabilities",
+		description: "Built an MCP server that brings FLUX image generation directly into Claude Code. Generate blog images, UI mockups, and design variations without leaving your coding environment.",
+		image: "https://kmaurinjones.dev/images/thoughts/giving-ai-agents-robust-image-generation-capabilities/hero.webp",
 		mediumUrl: ""
 	};
 </script>
@@ -13,6 +16,9 @@
 	title={metadata.title}
 	date={metadata.date}
 	categories={metadata.categories}
+	slug={metadata.slug}
+	description={metadata.description}
+	image={metadata.image}
 >
 	<!-- Hero Image -->
 	<figure class="my-8">
