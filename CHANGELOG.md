@@ -20,6 +20,16 @@ Rules for updating the public changelog:
 - Focus on what users will notice, not how it was implemented
 
 
+## [0.3.3] - 2025-10-23
+
+### Added
+- New article: "Building a Power-User Claude Code Setup" at `/thoughts/building-a-power-user-claude-code-setup`
+- Comprehensive guide covering CLAUDE.md configuration, slash commands, hooks, and skills
+- Code examples demonstrating hook implementations (pip blocker, fallback checker, writing guidelines enforcer)
+- "Learn More" section with official Claude Code documentation links for each feature
+- Hero image generated using FLUX-1.1-Pro-Ultra
+- Article metadata added to `src/lib/data/articles.json`
+
 ## [0.3.2] - 2025-10-21
 
 ### Added
