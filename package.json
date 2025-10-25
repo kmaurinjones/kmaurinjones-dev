@@ -1,7 +1,7 @@
 {
 	"name": "kmaurinjones-dev",
 	"private": true,
-	"version": "0.3.3",
+	"version": "0.4.0",
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
@@ -9,7 +9,8 @@
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync || echo ''",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"sync-articles": "node scripts/sync-articles.js"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^6.1.0",
@@ -28,10 +29,14 @@
 	},
 	"dependencies": {
 		"@types/js-yaml": "^4.0.9",
+		"dotenv": "^17.2.3",
 		"flowbite": "^3.1.2",
 		"flowbite-svelte": "^1.17.4",
 		"flowbite-svelte-icons": "^3.0.0",
-		"js-yaml": "^4.1.0"
+		"gray-matter": "^4.0.3",
+		"js-yaml": "^4.1.0",
+		"marked": "^16.4.1",
+		"openai": "^6.7.0"
 	},
 	"overrides": {
 		"cookie": "^0.7.0"

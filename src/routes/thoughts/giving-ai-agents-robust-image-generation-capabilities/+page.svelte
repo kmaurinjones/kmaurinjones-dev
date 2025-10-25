@@ -4,10 +4,7 @@
 	const metadata = {
 		title: "Giving AI Agents Robust Image Generation Capabilities",
 		date: "October 20, 2025",
-		categories: ["MCP", "Image Generation", "FLUX", "Developer Tools", "AI"],
-		slug: "giving-ai-agents-robust-image-generation-capabilities",
-		description: "Built an MCP server that brings FLUX image generation directly into Claude Code. Generate blog images, UI mockups, and design variations without leaving your coding environment.",
-		image: "https://kmaurinjones.dev/images/thoughts/giving-ai-agents-robust-image-generation-capabilities/hero.webp",
+		categories: ["MCP","Image Generation","FLUX","Developer Tools","AI"],
 		mediumUrl: ""
 	};
 </script>
@@ -16,12 +13,8 @@
 	title={metadata.title}
 	date={metadata.date}
 	categories={metadata.categories}
-	slug={metadata.slug}
-	description={metadata.description}
-	image={metadata.image}
 >
-	<!-- Hero Image -->
-	<figure class="my-8">
+	{@html `<figure class="my-8">
 		<img src="/images/thoughts/giving-ai-agents-robust-image-generation-capabilities/hero.webp"
 			 alt="Abstract digital illustration of AI neural networks transforming into vibrant images"
 			 class="w-[70%] md:w-[60%] lg:w-[50%] mx-auto" />
@@ -30,108 +23,110 @@
 		</figcaption>
 	</figure>
 
-	<p>Text-based AI agents like Claude Code are incredibly powerful for software development, but they hit a wall when visual content is needed. Need a hero image for your blog post? Generate UI mockups? Create variations of a design? You're forced to context-switch to a separate tool, breaking flow and adding friction.</p>
+<pre><code>Text-based AI agents like Claude Code are incredibly powerful for software development, but they hit a wall when visual content is needed. Need a hero image for your blog post? Generate UI mockups? Create variations of a design? You&#39;re forced to context-switch to a separate tool, breaking flow and adding friction.
 
-	<p>I built a solution in 20 minutes: an MCP (Model Context Protocol) server that brings FLUX image generation directly into Claude Code and other MCP clients.</p>
+I built a solution in 20 minutes: an MCP (Model Context Protocol) server that brings FLUX image generation directly into Claude Code and other MCP clients.
+</code></pre>
+<h2>The Problem with Text-Only Agents</h2>
+<pre><code>Claude Code excels at writing code, refactoring, debugging, and system administration. But it&#39;s text-dominant by nature. When I&#39;m writing technical articles or building interfaces, I constantly need visual assets. The workflow looked like this:
 
-	<h2>The Problem with Text-Only Agents</h2>
 
-	<p>Claude Code excels at writing code, refactoring, debugging, and system administration. But it's text-dominant by nature. When I'm writing technical articles or building interfaces, I constantly need visual assets. The workflow looked like this:</p>
+	1. Work in Claude Code
 
-	<ol>
-		<li>Work in Claude Code</li>
-		<li>Switch to Replicate/ChatGPT/Midjourney for images</li>
-		<li>Download files manually</li>
-		<li>Move them to the right directory</li>
-		<li>Return to Claude Code</li>
-	</ol>
+	2. Switch to Replicate/ChatGPT/Midjourney for images
 
-	<p>Each context switch costs time and mental energy. I wanted to multimodalize the agent—give it native image generation capabilities without leaving the terminal.</p>
+	3. Download files manually
 
-	<h2>Building the FLUX MCP</h2>
+	4. Move them to the right directory
 
-	<p>The Model Context Protocol makes this straightforward. An MCP server exposes tools that AI agents can call directly. I built a Node.js server that wraps Replicate's FLUX API, exposing two tools:</p>
+	5. Return to Claude Code
 
-	<ul>
-		<li><code>flux_models</code> — Lists all 6 available FLUX models with usage notes</li>
-		<li><code>flux_generate</code> — Generates images with full control over model, aspect ratio, output format, resolution, and advanced parameters</li>
-	</ul>
 
-	<p>The implementation took about 20 minutes with Claude Code handling most of the heavy lifting. The server validates paths (preventing directory traversal attacks), enforces HTTPS-only URLs, and restricts downloads to Replicate's CDN for security.</p>
 
-	<p>Installation is simple:</p>
+Each context switch costs time and mental energy. I wanted to multimodalize the agent—give it native image generation capabilities without leaving the terminal.
+</code></pre>
+<h2>Building the FLUX MCP</h2>
+<pre><code>The Model Context Protocol makes this straightforward. An MCP server exposes tools that AI agents can call directly. I built a Node.js server that wraps Replicate&#39;s FLUX API, exposing two tools:
 
-	<pre><code class="language-bash">claude mcp add flux-mcp \
-  --env REPLICATE_API_TOKEN=r8_your_token \
-  -- node /path/to/flux-mcp/index.js</code></pre>
 
-	<p>For Claude Desktop users:</p>
+	- \`flux_models\` — Lists all 6 available FLUX models with usage notes
 
-	<pre><code class="language-json">{`{
-  "mcpServers": {
-    "flux-mcp": {
-      "command": "node",
-      "args": ["/absolute/path/to/flux-mcp/index.js"],
-      "env": {
-        "REPLICATE_API_TOKEN": "r8_your_token"
+	- \`flux_generate\` — Generates images with full control over model, aspect ratio, output format, resolution, and advanced parameters
+
+
+
+The implementation took about 20 minutes with Claude Code handling most of the heavy lifting. The server validates paths (preventing directory traversal attacks), enforces HTTPS-only URLs, and restricts downloads to Replicate&#39;s CDN for security.
+
+Installation is simple:
+
+\`claude mcp add flux-mcp \
+</code></pre>
+<p>  --env REPLICATE_API_TOKEN=r8_your_token <br>  -- node /path/to/flux-mcp/index.js\`</pre></p>
+<pre><code>&lt;p&gt;For Claude Desktop users:
+
+\`{\`{
+</code></pre>
+<p>  &quot;mcpServers&quot;: {
+    &quot;flux-mcp&quot;: {
+      &quot;command&quot;: &quot;node&quot;,
+      &quot;args&quot;: [&quot;/absolute/path/to/flux-mcp/index.js&quot;],
+      &quot;env&quot;: {
+        &quot;REPLICATE_API_TOKEN&quot;: &quot;r8_your_token&quot;
       }
     }
   }
-}`}</code></pre>
+}<code>}</code></pre></p>
+<h2>Using It (Meta!)</h2>
+<pre><code>&lt;p&gt;I&#39;m using the Flux MCP right now to write this article. The hero image you see above was generated by Claude Code calling \`flux_generate\` with FLUX1.1 Pro Ultra, 16:9 aspect ratio, raw realism mode enabled, and PNG output format. The agent saved it directly to the article&#39;s image directory without me touching a file browser.
 
-	<h2>Using It (Meta!)</h2>
+&lt;figure class=&quot;my-8&quot;&gt;
+	&lt;img src=&quot;/images/thoughts/giving-ai-agents-robust-image-generation-capabilities/claude-code-usage-screenshot.png&quot;
+		 alt=&quot;Screenshot of Claude Code using the Flux MCP to generate images during article creation&quot;
+		 class=&quot;w-[70%] md:w-[60%] lg:w-[50%] mx-auto&quot; /&gt;
+	&lt;figcaption class=&quot;text-center text-sm text-taupe mt-2&quot;&gt;
+		Live screenshot of Claude Code using the Flux MCP during this article&#39;s creation.
+	&lt;/figcaption&gt;
+&lt;/figure&gt;
 
-	<p>I'm using the Flux MCP right now to write this article. The hero image you see above was generated by Claude Code calling <code>flux_generate</code> with FLUX1.1 Pro Ultra, 16:9 aspect ratio, raw realism mode enabled, and PNG output format. The agent saved it directly to the article's image directory without me touching a file browser.</p>
+The workflow is frictionless: I describe what I need, the agent generates it, and we keep moving. No context switching. No manual file management.
+</code></pre>
+<h3>Example Generations</h3>
+<pre><code>Here are a few examples generated while writing this article, demonstrating different use cases:
 
-	<figure class="my-8">
-		<img src="/images/thoughts/giving-ai-agents-robust-image-generation-capabilities/claude-code-usage-screenshot.png"
-			 alt="Screenshot of Claude Code using the Flux MCP to generate images during article creation"
-			 class="w-[70%] md:w-[60%] lg:w-[50%] mx-auto" />
-		<figcaption class="text-center text-sm text-taupe mt-2">
-			Live screenshot of Claude Code using the Flux MCP during this article's creation.
-		</figcaption>
-	</figure>
+&lt;figure class=&quot;my-8&quot;&gt;
+	&lt;img src=&quot;/images/thoughts/giving-ai-agents-robust-image-generation-capabilities/ui-mockup-example.webp&quot;
+		 alt=&quot;Modern task management dashboard UI mockup with cream background and navy blue accents&quot;
+		 class=&quot;w-[70%] md:w-[60%] lg:w-[50%] mx-auto&quot; /&gt;
+	&lt;figcaption class=&quot;text-center text-sm text-taupe mt-2&quot;&gt;
+		UI mockup generated with FLUX Pro (16:9, WebP). Prompt: &quot;Clean minimal UI mockup of a modern task management dashboard, soft cream background, navy blue headers, terracotta accent buttons.&quot;
+	&lt;/figcaption&gt;
+&lt;/figure&gt;
 
-	<p>The workflow is frictionless: I describe what I need, the agent generates it, and we keep moving. No context switching. No manual file management.</p>
+&lt;figure class=&quot;my-8&quot;&gt;
+	&lt;img src=&quot;/images/thoughts/giving-ai-agents-robust-image-generation-capabilities/technical-diagram-example.webp&quot;
+		 alt=&quot;Abstract technical diagram showing network nodes and data flow&quot;
+		 class=&quot;w-[70%] md:w-[60%] lg:w-[50%] mx-auto&quot; /&gt;
+	&lt;figcaption class=&quot;text-center text-sm text-taupe mt-2&quot;&gt;
+		Technical illustration generated with FLUX Pro (3:2, WebP). Prompt: &quot;Abstract technical illustration of connected network nodes and data flow, geometric shapes, modern clean design.&quot;
+	&lt;/figcaption&gt;
+&lt;/figure&gt;
 
-	<h3>Example Generations</h3>
+Each took seconds to generate and was saved directly to the article&#39;s image directory—no manual downloads, no switching contexts.
+</code></pre>
+<h2>Why It Matters</h2>
+<pre><code>The models are older than cutting-edge options like Gemini&#39;s latest image generators, so quality may not match the newest tools. But for abstract content, UI mockups, and technical illustrations, FLUX performs extremely well.
 
-	<p>Here are a few examples generated while writing this article, demonstrating different use cases:</p>
+The real win is UX. Keeping image generation inside the agent&#39;s workflow reduces friction dramatically. When building projects that blend code and visuals—landing pages, technical articles, design systems—the Flux MCP makes the entire process feel cohesive.
 
-	<figure class="my-8">
-		<img src="/images/thoughts/giving-ai-agents-robust-image-generation-capabilities/ui-mockup-example.webp"
-			 alt="Modern task management dashboard UI mockup with cream background and navy blue accents"
-			 class="w-[70%] md:w-[60%] lg:w-[50%] mx-auto" />
-		<figcaption class="text-center text-sm text-taupe mt-2">
-			UI mockup generated with FLUX Pro (16:9, WebP). Prompt: "Clean minimal UI mockup of a modern task management dashboard, soft cream background, navy blue headers, terracotta accent buttons."
-		</figcaption>
-	</figure>
+The core concept is entirely modular. Though I&#39;ve used the FLUX model family via Replicate here, it&#39;s straightforward to fork this MCP and swap in different models for different purposes. Want to use GPT-Image for technical diagrams, Google&#39;s Nano Banana for photorealism, and Midjourney for artistic content? Build your own fleet of image generation and editing models, all accessible through a single MCP interface. The same pattern could extend to video generation once APIs become more broadly available.
 
-	<figure class="my-8">
-		<img src="/images/thoughts/giving-ai-agents-robust-image-generation-capabilities/technical-diagram-example.webp"
-			 alt="Abstract technical diagram showing network nodes and data flow"
-			 class="w-[70%] md:w-[60%] lg:w-[50%] mx-auto" />
-		<figcaption class="text-center text-sm text-taupe mt-2">
-			Technical illustration generated with FLUX Pro (3:2, WebP). Prompt: "Abstract technical illustration of connected network nodes and data flow, geometric shapes, modern clean design."
-		</figcaption>
-	</figure>
+This is what multimodal agents should feel like: text, code, and images handled seamlessly within a single interface.
+</code></pre>
+<h2>Links</h2>
+<pre><code>	- **GitHub Repository**: [flux-mcp](https://github.com/kmaurinjones/flux-mcp)
 
-	<p>Each took seconds to generate and was saved directly to the article's image directory—no manual downloads, no switching contexts.</p>
+	- **LinkedIn**: [linkedin.com/in/kmaurinjones](https://www.linkedin.com/in/kmaurinjones/)
 
-	<h2>Why It Matters</h2>
-
-	<p>The models are older than cutting-edge options like Gemini's latest image generators, so quality may not match the newest tools. But for abstract content, UI mockups, and technical illustrations, FLUX performs extremely well.</p>
-
-	<p>The real win is UX. Keeping image generation inside the agent's workflow reduces friction dramatically. When building projects that blend code and visuals—landing pages, technical articles, design systems—the Flux MCP makes the entire process feel cohesive.</p>
-
-	<p>The core concept is entirely modular. Though I've used the FLUX model family via Replicate here, it's straightforward to fork this MCP and swap in different models for different purposes. Want to use GPT-Image for technical diagrams, Google's Nano Banana for photorealism, and Midjourney for artistic content? Build your own fleet of image generation and editing models, all accessible through a single MCP interface. The same pattern could extend to video generation once APIs become more broadly available.</p>
-
-	<p>This is what multimodal agents should feel like: text, code, and images handled seamlessly within a single interface.</p>
-
-	<h2>Links</h2>
-	<ul>
-		<li><strong>GitHub Repository</strong>: <a href="https://github.com/kmaurinjones/flux-mcp" target="_blank" rel="noopener">flux-mcp</a></li>
-		<li><strong>LinkedIn</strong>: <a href="https://www.linkedin.com/in/kmaurinjones/" target="_blank" rel="noopener">linkedin.com/in/kmaurinjones</a></li>
-		<li><strong>Email</strong>: <a href="mailto:kmaurinjones@gmail.com">kmaurinjones@gmail.com</a></li>
-	</ul>
+	- **Email**: [kmaurinjones@gmail.com](mailto:kmaurinjones@gmail.com)
+</code></pre>`}
 </ArticleLayout>
