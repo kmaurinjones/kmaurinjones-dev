@@ -35,17 +35,22 @@ function escapeXml(value) {
 		.replace(/'/g, '&apos;');
 }
 
-function formatRFC822Date(dateString) {
+function parseUtcDate(dateString) {
 	if (typeof dateString !== 'string') {
 		throw new Error('Date must be provided as a string');
 	}
 
-	const parsed = new Date(dateString);
+	const parsed = new Date(`${dateString} UTC`);
 
 	if (Number.isNaN(parsed.getTime())) {
 		throw new Error(`Invalid date string: ${dateString}`);
 	}
 
+	return parsed;
+}
+
+function formatRFC822Date(dateString) {
+	const parsed = parseUtcDate(dateString);
 	return parsed.toUTCString();
 }
 
@@ -80,17 +85,8 @@ async function loadArticles() {
 	});
 
 	const sorted = [...articles].sort((a, b) => {
-		const left = new Date(a.date);
-		const right = new Date(b.date);
-
-		if (Number.isNaN(left.getTime())) {
-			throw new Error(`Invalid date string: ${a.date} (${a.slug})`);
-		}
-
-		if (Number.isNaN(right.getTime())) {
-			throw new Error(`Invalid date string: ${b.date} (${b.slug})`);
-		}
-
+		const left = parseUtcDate(a.date);
+		const right = parseUtcDate(b.date);
 		return right.getTime() - left.getTime();
 	});
 
@@ -188,4 +184,3 @@ main().catch(error => {
 	console.error(error.message);
 	process.exit(1);
 });
-
