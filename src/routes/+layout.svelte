@@ -9,6 +9,7 @@
 <svelte:head>
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	<link rel="alternate" type="application/rss+xml" title="Kai Maurin-Jones - Thoughts" href="/thoughts/rss.xml" />
 </svelte:head>
 
 <div class="min-h-screen bg-base text-primary font-sans flex flex-col">
