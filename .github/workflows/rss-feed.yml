@@ -1,0 +1,32 @@
+name: RSS Feed
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate RSS feed
+        run: npm run generate:rss
+
+      - name: Ensure feed is up to date
+        run: |
+          if ! git diff --quiet --exit-code; then
+            echo "::error::Generated RSS feed is out of date. Run npm run generate:rss and commit the updated static/thoughts/rss.xml file."
+            git status --short
+            exit 1
+          fi

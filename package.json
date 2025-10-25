@@ -10,7 +10,8 @@
 		"prepare": "svelte-kit sync || echo ''",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"sync-articles": "node scripts/sync-articles.js"
+		"sync-articles": "node scripts/sync-articles.js",
+		"generate:rss": "node scripts/generate-rss.js"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^6.1.0",

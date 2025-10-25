@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+	<channel>
+		<title>Kai Maurin-Jones - Thoughts</title>
+		<description>Articles and writings on AI, machine learning, data science, and the intersection of technology and real-world applications</description>
+		<link>https://kmaurinjones.dev/thoughts</link>
+		<atom:link href="https://kmaurinjones.dev/thoughts/rss.xml" rel="self" type="application/rss+xml" />
+		<language>en-us</language>
+		<lastBuildDate>Thu, 23 Oct 2025 04:00:00 GMT</lastBuildDate>
+		<managingEditor>hello@kmaurinjones.dev (Kai Maurin-Jones)</managingEditor>
+		<webMaster>hello@kmaurinjones.dev (Kai Maurin-Jones)</webMaster>
+		<itunes:author>Kai Maurin-Jones</itunes:author>
+		<itunes:summary>Articles and writings on AI, machine learning, data science, and the intersection of technology and real-world applications</itunes:summary>
+		<itunes:owner>
+			<itunes:name>Kai Maurin-Jones</itunes:name>
+			<itunes:email>hello@kmaurinjones.dev</itunes:email>
+		</itunes:owner>
+		<itunes:explicit>no</itunes:explicit>
+		<itunes:category text="Technology" />
+		<itunes:image href="https://kmaurinjones.dev/images/podcast-cover.jpg" />
+		<item>
+			<title>Building a Power-User Claude Code Setup</title>
+			<link>https://kmaurinjones.dev/thoughts/building-a-power-user-claude-code-setup</link>
+			<guid isPermaLink="true">https://kmaurinjones.dev/thoughts/building-a-power-user-claude-code-setup</guid>
+			<pubDate>Thu, 23 Oct 2025 04:00:00 GMT</pubDate>
+			<description>Building a Power-User Claude Code Setup</description>
+			<category>Claude Code</category>
+			<category>Developer Tools</category>
+			<category>Productivity</category>
+			<category>Automation</category>
+			<category>Configuration</category>
+			<enclosure url="https://kmaurinjones.dev/audio/thoughts/building-a-power-user-claude-code-setup.mp3" type="audio/mpeg" length="14063998" />
+			<itunes:author>Kai Maurin-Jones</itunes:author>
+			<itunes:summary>Building a Power-User Claude Code Setup</itunes:summary>
+			<itunes:explicit>no</itunes:explicit>
+		</item>
+		<item>
+			<title>Giving AI Agents Robust Image Generation Capabilities</title>
+			<link>https://kmaurinjones.dev/thoughts/giving-ai-agents-robust-image-generation-capabilities</link>
+			<guid isPermaLink="true">https://kmaurinjones.dev/thoughts/giving-ai-agents-robust-image-generation-capabilities</guid>
+			<pubDate>Mon, 20 Oct 2025 04:00:00 GMT</pubDate>
+			<description>Giving AI Agents Robust Image Generation Capabilities</description>
+			<category>MCP</category>
+			<category>Image Generation</category>
+			<category>FLUX</category>
+			<category>Developer Tools</category>
+			<category>AI</category>
+			<enclosure url="https://kmaurinjones.dev/audio/thoughts/giving-ai-agents-robust-image-generation-capabilities.mp3" type="audio/mpeg" length="4983372" />
+			<itunes:author>Kai Maurin-Jones</itunes:author>
+			<itunes:summary>Giving AI Agents Robust Image Generation Capabilities</itunes:summary>
+			<itunes:explicit>no</itunes:explicit>
+		</item>
+		<item>
+			<title>Keeping Personal Projects Alive: Automated Streamlit Monitoring with Playwright</title>
+			<link>https://kmaurinjones.dev/thoughts/keeping-personal-projects-alive-automated-streamlit-monitoring</link>
+			<guid isPermaLink="true">https://kmaurinjones.dev/thoughts/keeping-personal-projects-alive-automated-streamlit-monitoring</guid>
+			<pubDate>Sat, 18 Oct 2025 04:00:00 GMT</pubDate>
+			<description>Keeping Personal Projects Alive: Automated Streamlit Monitoring with Playwright</description>
+			<category>Python</category>
+			<category>Streamlit</category>
+			<category>Playwright</category>
+			<category>Automation</category>
+			<category>DevOps</category>
+			<category>Web Scraping</category>
+			<enclosure url="https://kmaurinjones.dev/audio/thoughts/keeping-personal-projects-alive-automated-streamlit-monitoring.mp3" type="audio/mpeg" length="15118508" />
+			<itunes:author>Kai Maurin-Jones</itunes:author>
+			<itunes:summary>Keeping Personal Projects Alive: Automated Streamlit Monitoring with Playwright</itunes:summary>
+			<itunes:explicit>no</itunes:explicit>
+		</item>
+		<item>
+			<title>Recreating NYT Connections: When Four Guesses Just Isn&apos;t Enough</title>
+			<link>https://kmaurinjones.dev/thoughts/recreating-nyt-connections-when-four-guesses-just-isnt-enough</link>
+			<guid isPermaLink="true">https://kmaurinjones.dev/thoughts/recreating-nyt-connections-when-four-guesses-just-isnt-enough</guid>
+			<pubDate>Fri, 17 Oct 2025 04:00:00 GMT</pubDate>
+			<description>Recreating NYT Connections: When Four Guesses Just Isn&apos;t Enough</description>
+			<category>Game Development</category>
+			<category>FastAPI</category>
+			<category>SQLite</category>
+			<category>Web Development</category>
+			<category>Python</category>
+			<enclosure url="https://kmaurinjones.dev/audio/thoughts/recreating-nyt-connections-when-four-guesses-just-isnt-enough.mp3" type="audio/mpeg" length="3299832" />
+			<itunes:author>Kai Maurin-Jones</itunes:author>
+			<itunes:summary>Recreating NYT Connections: When Four Guesses Just Isn&apos;t Enough</itunes:summary>
+			<itunes:explicit>no</itunes:explicit>
+		</item>
+		<item>
+			<title>Recreating Wordle with AI Assistance: A One-Day Build</title>
+			<link>https://kmaurinjones.dev/thoughts/recreating-wordle-with-ai-assistance</link>
+			<guid isPermaLink="true">https://kmaurinjones.dev/thoughts/recreating-wordle-with-ai-assistance</guid>
+			<pubDate>Fri, 17 Oct 2025 04:00:00 GMT</pubDate>
+			<description>Recreating Wordle with AI Assistance: A One-Day Build</description>
+			<category>wordle</category>
+			<category>fastapi</category>
+			<category>web development</category>
+			<category>ai-assisted coding</category>
+			<category>game development</category>
+			<enclosure url="https://kmaurinjones.dev/audio/thoughts/recreating-wordle-with-ai-assistance.mp3" type="audio/mpeg" length="4247764" />
+			<itunes:author>Kai Maurin-Jones</itunes:author>
+			<itunes:summary>Recreating Wordle with AI Assistance: A One-Day Build</itunes:summary>
+			<itunes:explicit>no</itunes:explicit>
+		</item>
+		<item>
+			<title>Accelerating Home Building Code Research with Retrieval-Augmented Generation (RAG)</title>
+			<link>https://kmaurinjones.dev/thoughts/accelerating-home-building-code-research-with-retrieval-augmented-generation-rag</link>
+			<guid isPermaLink="true">https://kmaurinjones.dev/thoughts/accelerating-home-building-code-research-with-retrieval-augmented-generation-rag</guid>
+			<pubDate>Tue, 18 Feb 2025 05:00:00 GMT</pubDate>
+			<description>Accelerating Home Building Code Research with Retrieval-Augmented Generation (RAG)</description>
+			<category>retrieval augmented gen</category>
+			<category>large language models</category>
+			<category>ai</category>
+			<category>artificial intelligence</category>
+			<category>openai</category>
+		</item>
+		<item>
+			<title>Evaluating Randomness in Generative AI &amp; Large Language Models</title>
+			<link>https://kmaurinjones.dev/thoughts/evaluating-randomness-in-generative-ai-large-language-models</link>
+			<guid isPermaLink="true">https://kmaurinjones.dev/thoughts/evaluating-randomness-in-generative-ai-large-language-models</guid>
+			<pubDate>Mon, 04 Nov 2024 05:00:00 GMT</pubDate>
+			<description>Evaluating Randomness in Generative AI &amp; Large Language Models</description>
+			<category>large language models</category>
+			<category>statistics</category>
+			<category>artificial intelligence</category>
+			<category>random</category>
+			<category>machine learning</category>
+		</item>
+		<item>
+			<title>Joyful Bytes: Spreading Positivity Through Daily AI-Generated Art</title>
+			<link>https://kmaurinjones.dev/thoughts/joyful-bytes-spreading-positivity-through-daily-ai-generated-art</link>
+			<guid isPermaLink="true">https://kmaurinjones.dev/thoughts/joyful-bytes-spreading-positivity-through-daily-ai-generated-art</guid>
+			<pubDate>Mon, 28 Oct 2024 04:00:00 GMT</pubDate>
+			<description>Joyful Bytes: Spreading Positivity Through Daily AI-Generated Art</description>
+			<category>artifical intellegence</category>
+			<category>machine learning ai</category>
+			<category>python</category>
+			<category>image ai</category>
+			<category>large language models</category>
+		</item>
+		<item>
+			<title>365 Days of News Headlines — A Longitudinal Analysis Driven by Data Science</title>
+			<link>https://kmaurinjones.dev/thoughts/365-days-of-news-headlines-a-longitudinal-analysis-driven-by-data-science</link>
+			<guid isPermaLink="true">https://kmaurinjones.dev/thoughts/365-days-of-news-headlines-a-longitudinal-analysis-driven-by-data-science</guid>
+			<pubDate>Sat, 19 Oct 2024 04:00:00 GMT</pubDate>
+			<description>365 Days of News Headlines — A Longitudinal Analysis Driven by Data Science</description>
+			<category>data science</category>
+			<category>algorithms</category>
+			<category>large language models</category>
+			<category>artificial intelligence</category>
+			<category>ai</category>
+		</item>
+		<item>
+			<title>I Made a Bot that Can Play the Wiki Game (Python code included!)</title>
+			<link>https://kmaurinjones.dev/thoughts/i-made-a-bot-that-can-play-the-wiki-game-python-code-included</link>
+			<guid isPermaLink="true">https://kmaurinjones.dev/thoughts/i-made-a-bot-that-can-play-the-wiki-game-python-code-included</guid>
+			<pubDate>Thu, 18 Jan 2024 05:00:00 GMT</pubDate>
+			<description>I Made a Bot that Can Play the Wiki Game (Python code included!)</description>
+			<category>nlp</category>
+			<category>transformers</category>
+			<category>ai</category>
+			<category>wikipedia</category>
+			<category>data science</category>
+		</item>
+		<item>
+			<title>Understanding the Unseen: Revolutionizing Access to Justice through Data Science &amp; Natural Language Processing</title>
+			<link>https://kmaurinjones.dev/thoughts/understanding-the-unseen-revolutionizing-access-to-justice-through-data-science-natural-language-processing</link>
+			<guid isPermaLink="true">https://kmaurinjones.dev/thoughts/understanding-the-unseen-revolutionizing-access-to-justice-through-data-science-natural-language-processing</guid>
+			<pubDate>Fri, 16 Jun 2023 04:00:00 GMT</pubDate>
+			<description>Understanding the Unseen: Revolutionizing Access to Justice through Data Science &amp; Natural Language Processing</description>
+			<category>law</category>
+			<category>nlp</category>
+			<category>data science</category>
+			<category>legal</category>
+			<category>machine learning</category>
+		</item>
+		<item>
+			<title>How I Beat Wordle For Good</title>
+			<link>https://kmaurinjones.dev/thoughts/how-i-beat-wordle-for-good</link>
+			<guid isPermaLink="true">https://kmaurinjones.dev/thoughts/how-i-beat-wordle-for-good</guid>
+			<pubDate>Tue, 04 Apr 2023 04:00:00 GMT</pubDate>
+			<description>How I Beat Wordle For Good</description>
+			<category>wordle</category>
+			<category>probability</category>
+			<category>math</category>
+			<category>data science</category>
+			<category>computational linguistics</category>
+		</item>
+	</channel>
+</rss>
