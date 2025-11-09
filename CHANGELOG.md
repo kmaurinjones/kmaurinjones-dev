@@ -20,6 +20,62 @@ Rules for updating the public changelog:
 - Focus on what users will notice, not how it was implemented
 
 
+## [0.4.1] - 2025-11-09
+
+### Added
+- **Bonus Page**: New `/bonus` route with random case converter tool (Easter egg feature)
+  - Converts text to random casing (rAnDoM cAsE style)
+  - Enforces max 50% same-case character pairs for authentic randomness
+  - 10,000 character limit with trailing whitespace stripping
+  - Copy to clipboard functionality
+  - Added "Bonus" link to navigation (desktop and mobile)
+
+### Changed
+- **Audio Player**: Temporarily disabled audio player on article pages
+  - Audio functionality commented out in ArticleLayout component
+  - RSS feed still includes audio enclosures for podcast apps
+  - Audio files preserved for future re-enablement
+
+## [0.4.0] - 2025-10-24
+
+### Added
+- **TTS Audio Narration**: Articles now feature audio narration using ElevenLabs `eleven_multilingual_v2` model
+- Custom audio player component with play/pause, seek, skip ±10s, and playback speed controls (1.0x-2.0x)
+- Conditional rendering: audio player only appears when corresponding MP3 file exists
+- Audio generated for 4 articles:
+  - "Giving AI Agents Robust Image Generation Capabilities" (4.75 MB)
+  - "Keeping Personal Projects Alive: Automated Streamlit Monitoring with Playwright" (14.42 MB)
+  - "Recreating NYT Connections: When Four Guesses Just Isn't Enough" (3.15 MB)
+  - "Recreating Wordle with AI Assistance: A One-Day Build" (4.05 MB)
+- Markdown-based article workflow with automated sync script
+- `scripts/sync-articles.js`: Converts markdown to Svelte components and generates TTS audio
+- `scripts/extract-to-markdown.js`: Extracts existing Svelte articles to markdown source files
+- `scripts/lib/tts-generator.js`: Core TTS generation module with smart chunking (9,500 char limit)
+- Markdown source files for all 12 existing articles in `.articles-drafts/`
+- Automatic code block and image attribution removal from narration for better UX
+
+### Changed
+- ArticleLayout component now checks for audio file existence before rendering player
+- Audio player styling matches site theme (gradient backgrounds, terracotta accents)
+- Article sync process now integrated with TTS generation workflow
+
+### Technical
+- Uses ElevenLabs API with voice ID configuration via environment variables
+- Smart text chunking on paragraph boundaries for articles exceeding API limits
+- Seamless audio concatenation using `Buffer.concat()` for multi-chunk articles
+- File modification time tracking to skip unnecessary regeneration
+- Added dependencies: `dotenv` for environment variable loading
+
+## [0.3.3] - 2025-10-23
+
+### Added
+- New article: "Building a Power-User Claude Code Setup" at `/thoughts/building-a-power-user-claude-code-setup`
+- Comprehensive guide covering CLAUDE.md configuration, slash commands, hooks, and skills
+- Code examples demonstrating hook implementations (pip blocker, fallback checker, writing guidelines enforcer)
+- "Learn More" section with official Claude Code documentation links for each feature
+- Hero image generated using FLUX-1.1-Pro-Ultra
+- Article metadata added to `src/lib/data/articles.json`
+
 ## [0.3.2] - 2025-10-21
 
 ### Added

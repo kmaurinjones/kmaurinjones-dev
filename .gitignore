@@ -8,6 +8,7 @@ completed-articles/
 .github/WRITING_GUIDELINES.md
 docs_ignored/
 drafts/
+.articles-drafts/
 
 # Image editing for image assets
 *image-editing/
