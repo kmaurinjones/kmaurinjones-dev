@@ -21,12 +21,31 @@
     // Truncate if exceeds max length
     if (value.length > MAX_CHARS) {
       value = value.slice(0, MAX_CHARS);
+      target.value = value; // Update the textarea immediately
     }
 
     // Strip trailing whitespace in real-time
     value = value.trimEnd();
 
     inputText = value;
+  }
+
+  // Prevent typing beyond max length
+  function handleKeyDown(event: KeyboardEvent) {
+    const target = event.target as HTMLTextAreaElement;
+
+    // Allow: backspace, delete, tab, escape, enter, arrow keys, home, end
+    const allowedKeys = ['Backspace', 'Delete', 'Tab', 'Escape', 'Enter', 'ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', 'Home', 'End'];
+
+    // Allow: Ctrl/Cmd shortcuts (copy, paste, cut, select all, etc.)
+    if (event.ctrlKey || event.metaKey) {
+      return;
+    }
+
+    // If at max length and trying to type a character (not a control key), prevent it
+    if (inputText.length >= MAX_CHARS && !allowedKeys.includes(event.key)) {
+      event.preventDefault();
+    }
   }
 
   function countSameCasePairs(text: string): number {
@@ -124,6 +143,7 @@
         id="input-text"
         value={inputText}
         oninput={handleInput}
+        onkeydown={handleKeyDown}
         onkeypress={handleKeyPress}
         placeholder="Type something here..."
         rows="4"
