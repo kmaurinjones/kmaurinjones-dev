@@ -1,12 +1,33 @@
 <script lang="ts">
   import { onMount } from 'svelte';
 
+  const MAX_CHARS = 10000;
+
   let mounted = $state(false);
   let inputText = $state('');
   let outputText = $state('');
   let copyButtonText = $state('Copy to Clipboard');
 
+  // Reactive character count
+  let charCount = $derived(inputText.length);
+
   onMount(() => mounted = true);
+
+  // Handle input changes - auto-truncate and strip trailing whitespace
+  function handleInput(event: Event) {
+    const target = event.target as HTMLTextAreaElement;
+    let value = target.value;
+
+    // Truncate if exceeds max length
+    if (value.length > MAX_CHARS) {
+      value = value.slice(0, MAX_CHARS);
+    }
+
+    // Strip trailing whitespace in real-time
+    value = value.trimEnd();
+
+    inputText = value;
+  }
 
   function countSameCasePairs(text: string): number {
     let sameCasePairs = 0;
@@ -101,14 +122,17 @@
     <div>
       <textarea
         id="input-text"
-        bind:value={inputText}
+        value={inputText}
+        oninput={handleInput}
         onkeypress={handleKeyPress}
         placeholder="Type something here..."
         rows="4"
-        maxlength="10000"
         class="w-full px-4 py-3 rounded-lg border border-taupe/30 focus:border-terracotta focus:ring-2 focus:ring-terracotta/20 outline-none transition-colors bg-base text-primary resize-none"
       ></textarea>
-      <p class="text-sm text-taupe/70 mt-2">Press Enter or click the button below to randomize</p>
+      <div class="flex justify-between items-center mt-2">
+        <p class="text-sm text-taupe/70">Press Enter or click the button below to randomize</p>
+        <p class="text-sm text-taupe/70">{charCount} / {MAX_CHARS}</p>
+      </div>
     </div>
 
     <!-- Convert Button -->
