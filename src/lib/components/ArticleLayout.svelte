@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import { page } from '$app/stores';
-  import AudioPlayer from '$lib/components/AudioPlayer.svelte';
+  // import { page } from '$app/stores';
+  // import AudioPlayer from '$lib/components/AudioPlayer.svelte';
 
   let {
     title,
@@ -22,7 +22,7 @@
   } = $props();
 
   let mounted = $state(false);
-  let hasAudio = $state(false);
+  // let hasAudio = $state(false);
 
   const defaultDescription = `${title} - Read on Kai Maurin-Jones' blog`;
   const metaDescription = description || defaultDescription;
@@ -30,19 +30,19 @@
   const ogImage = image || 'https://kmaurinjones.dev/images/cropped.webp';
 
   // Extract slug from current URL pathname if not provided
-  const currentSlug = slug || $page.url.pathname.split('/').filter(Boolean).pop() || '';
-  const audioSrc = `/audio/thoughts/${currentSlug}.mp3`;
+  // const currentSlug = slug || $page.url.pathname.split('/').filter(Boolean).pop() || '';
+  // const audioSrc = `/audio/thoughts/${currentSlug}.mp3`;
 
   onMount(async () => {
     mounted = true;
 
     // Check if audio file exists
-    try {
-      const response = await fetch(audioSrc, { method: 'HEAD' });
-      hasAudio = response.ok;
-    } catch {
-      hasAudio = false;
-    }
+    // try {
+    //   const response = await fetch(audioSrc, { method: 'HEAD' });
+    //   hasAudio = response.ok;
+    // } catch {
+    //   hasAudio = false;
+    // }
   });
 </script>
 
@@ -96,11 +96,11 @@
     </header>
 
     <!-- Audio Player (only show if audio file exists) -->
-    {#if hasAudio}
+    <!-- {#if hasAudio}
       <div class="mb-12">
         <AudioPlayer audioSrc={audioSrc} title={title} />
       </div>
-    {/if}
+    {/if} -->
 
     <!-- Article content -->
     <div class="prose prose-lg max-w-none mb-12 w-full

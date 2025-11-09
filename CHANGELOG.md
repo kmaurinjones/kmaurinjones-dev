@@ -20,6 +20,22 @@ Rules for updating the public changelog:
 - Focus on what users will notice, not how it was implemented
 
 
+## [0.4.1] - 2025-11-09
+
+### Added
+- **Bonus Page**: New `/bonus` route with random case converter tool (Easter egg feature)
+  - Converts text to random casing (rAnDoM cAsE style)
+  - Enforces max 50% same-case character pairs for authentic randomness
+  - 10,000 character limit with trailing whitespace stripping
+  - Copy to clipboard functionality
+  - Added "Bonus" link to navigation (desktop and mobile)
+
+### Changed
+- **Audio Player**: Temporarily disabled audio player on article pages
+  - Audio functionality commented out in ArticleLayout component
+  - RSS feed still includes audio enclosures for podcast apps
+  - Audio files preserved for future re-enablement
+
 ## [0.4.0] - 2025-10-24
 
 ### Added

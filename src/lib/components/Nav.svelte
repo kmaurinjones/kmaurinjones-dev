@@ -6,6 +6,7 @@
     { href: '/projects', label: 'Projects' },
     { href: '/thoughts', label: 'Thoughts' },
     { href: '/contact', label: 'Contact' },
+    { href: '/bonus', label: 'Bonus' },
   ];
 
   let mobileMenuOpen = $state(false);
